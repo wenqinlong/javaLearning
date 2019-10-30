@@ -4,7 +4,7 @@ public class ReadChineseNumber {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int number = in.nextInt();
-        String strNumber = String.valueOf(number);  // strNumber = Integer.toString(number);
+        String strNumber = String.valueOf(number);
         String[] ChiNumber = {"ling", "yi", "er", "san", "si", "wu", "liu", "qi", "ba", "jiu"};
         for (int i=0; i<strNumber.length(); i++) {
             String item = strNumber.substring(i,i+1);
@@ -12,9 +12,9 @@ public class ReadChineseNumber {
                 System.out.print("fu"+" ");
             } else {
                 if (i==strNumber.length()-1) {
-                    System.out.print(ChiNumber[Integer.valueOf(item)]);
+                    System.out.print(ChiNumber[Integer.parseInt(item)]);
                 } else {
-                    System.out.print(ChiNumber[Integer.valueOf(item)] +" ");
+                    System.out.print(ChiNumber[Integer.parseInt(item)] +" ");
                 }
             }
         }
