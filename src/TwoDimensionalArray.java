@@ -5,7 +5,8 @@ public class TwoDimensionalArray {
         Scanner in = new Scanner(System.in);
         final int SIZE = 3;
         int[][] board = new int[SIZE][SIZE];
-        boolean gotResult = false;
+
+
         int numOfX = 0;
         int numOfO = 0;
 
