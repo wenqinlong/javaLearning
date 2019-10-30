@@ -12,7 +12,7 @@ public class ReadChineseNumber {
                 System.out.print("fu"+" ");
             } else {
                 if (i==strNumber.length()-1) {
-                    System.out.print(ChiNumber[Integer.parseInt(item)]);
+                    System.out.print(ChiNumber[Integer.parseInt(item)]);  // Integer.valueOf(item);
                 } else {
                     System.out.print(ChiNumber[Integer.parseInt(item)] +" ");
                 }
