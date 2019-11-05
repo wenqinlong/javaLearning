@@ -5,8 +5,7 @@ import java.util.Scanner;
 import java.util.HashMap;
 
 public class Mileage {
-    private HashMap<HashMap<String, String>, Integer> mileages = new HashMap<HashMap<String, String>, Integer>();
-    private HashMap<String, String> cities = new HashMap<String, String>();
+    private HashMap<HashMap<String, String>, Integer> mileages = new HashMap<>();
     private ArrayList<String> city = new ArrayList<>();
     private ArrayList<Integer> mileage = new ArrayList<>();
 
@@ -30,5 +29,4 @@ public class Mileage {
         c.put(c1, c2);
         return mileages.get(c);
     }
-
 }

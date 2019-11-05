@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Coins {
-    private HashMap<Integer, String> coinnames = new HashMap<Integer, String>();
+    private HashMap<Integer, String> coinnames = new HashMap<>();
     // 相当于python里的dict,key值唯一
 
     public Coins() {

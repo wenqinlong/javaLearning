@@ -25,9 +25,6 @@ public class Display {
         step++;   // 语法正确，因为step是类变量，并且不能用this.来调用
     }
 
-
-
-
     public static void main(String[] args) {    // 这里的 static 标明这个函数是类函数，
                                                 // 不属于任意一个对象，和对象没有关系
 //        Display d = new Display(24);
@@ -58,8 +55,5 @@ public class Display {
 
         f();   // 类函数的调用不需要前边加对象
         d1.f();
-
-
-
     }
 }

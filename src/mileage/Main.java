@@ -10,20 +10,22 @@ public class Main {
         int num = 0;
         String city;
 
+        // enter the cities
         while (true) {
             city = in.next();
             if (city.equals("###")) {
                 break;
             }
             mlg.addCity(city);
-
         }
 
+        // creat the matrix of mileage.
         for (int i=0; i<mlg.getCity().size()*mlg.getCity().size(); i++) {
             num = in.nextInt();
             mlg.addMileage(num, i/3,i%3);
         }
 
+        // test
         String c1 = in.next();
         String c2 = in.next();
         System.out.println(mlg.getMileage(c1, c2));
