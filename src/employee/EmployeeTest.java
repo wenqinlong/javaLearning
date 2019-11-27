@@ -1,6 +1,7 @@
 package employee;
 
 import java.time.*;
+import employee.Employee;
 
 public class EmployeeTest {
     public static void main(String[] args) {
@@ -23,6 +24,5 @@ public class EmployeeTest {
         System.out.println(staff[0].getName().equals(staff[1].getName()));
         System.out.println(Employee.getNextId());  // 如果getNextId没有设置为静态方法，就不能用类名调用，只能通过实例对象调用
         System.out.println(staff[0].getNextId());
-
     }
 }

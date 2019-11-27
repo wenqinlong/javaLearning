@@ -11,6 +11,8 @@ public class Employee {
     private LocalDate hireDay;
 
     // constructor
+    public Employee() {}
+
     public Employee(String name, double salary, int year, int month, int day) {
         this.name = name;  // 如果写成  name=name, 则local变量并没有把值赋给实例域；最好不要命名与实例域相同的变量名字。
         this.salary = salary;
@@ -62,6 +64,8 @@ public class Employee {
     public static void main(String[] args) {
         Employee employee = new Employee("Happy", 1000000, 2000, 1, 1);
         System.out.println(employee.getName());
+        // System.out.println(id); // error
+        Employee employee1 = new Employee();
     }
 
 }
