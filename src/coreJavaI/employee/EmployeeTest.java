@@ -1,7 +1,4 @@
-package employee;
-
-import java.time.*;
-import employee.Employee;
+package coreJavaI.employee;
 
 public class EmployeeTest {
     public static void main(String[] args) {
